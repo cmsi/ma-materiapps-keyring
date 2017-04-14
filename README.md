@@ -5,22 +5,14 @@ GPG public key of MateriApps LIVE! debian package repository.
 
 ## How to build materiapps-keyring package
 
-1. ビルドディレクトリの準備
+1. パッケージのビルド
 
-        cd $HOME/build
-        sh /development/ma-materiapps-keyring/setup.sh
+        sh $HOME/vagrant/development/ma-materiapps-keyring/host-build.sh
 
-2. パッケージのビルド
+2. パッケージへの署名
 
-        cd $HOME/build
-        sh /development/ma-materiapps-keyring/build.sh 2>&1 | tee build.log
+        sh $HOME/vagrant/development/ma-materiapps-keyring/host-sign.sh
 
-3. パッケージへの署名
+3. リポジトリへの登録
 
-        cd $HOME/build
-        debsign materiapps-keyring_*.changes 
-
-4. リポジトリへの登録
-
-        cd $HOME/build
-        sh /development/MateriAppsLive/repos/add_repo.sh materiapps-keyring_*.changes
+        sh $HOME/vagrant/development/MateriAppsLive/repos/host-add.sh materiapps-keyring
