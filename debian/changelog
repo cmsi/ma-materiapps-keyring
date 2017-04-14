@@ -1,4 +1,10 @@
-materiapps-keyring (20150214-1) wheezy; urgency=low
+materiapps-keyring (20170413-1) unstable; urgency=low
+
+  * Added support for Jessie
+
+ -- Synge Todo <wistaria@phys.s.u-tokyo.ac.jp>  Thu, 13 Apr 2017 20:29:27 +0900
+
+materiapps-keyring (20150214-1) unstable; urgency=low
 
   * Initial version of materiapps-keyring
   * Added public key for Synge Todo <wistaria@phys.s.u-tokyo.ac.jp> 4096R/15300C6C 2014-03-03 [expires: 2019-03-02]
